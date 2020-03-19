@@ -1,5 +1,7 @@
 {
   "name": "filmemos",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
 }
