@@ -12,7 +12,7 @@ gem 'devise'
 gem 'redis'
 gem 'geocoder'
 gem 'webpacker'
-
+gem 'cloudinary', '~> 1.12.0'
 gem 'jbuilder', '~> 2.5'
 
 gem 'coffee-rails'
