@@ -15,6 +15,8 @@ gem 'webpacker'
 gem 'sqlite3'
 gem 'jbuilder', '~> 2.5'
 
+gem 'coffee-rails'
+gem 'turbolinks'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
