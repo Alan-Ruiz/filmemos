@@ -37,6 +37,7 @@ class UsersController < ApplicationController
     @category = Category.find(params[:user][:category_id])
     @user.category = @category
     if @user.save
+      session[:user_id] = @user.id
       redirect_to user_path(@user)
     else
       render :new
