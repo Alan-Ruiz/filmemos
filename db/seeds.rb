@@ -31,4 +31,3 @@ stunt = Category.create!(name: "Stunt Coordinator")
 
 
 
-
