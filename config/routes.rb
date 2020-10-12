@@ -6,4 +6,11 @@ Rails.application.routes.draw do
   resources :users do
     resources :works
   end
+
+  root 'sessions#new'
+  #temporary root path for now
+
+  resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :destroy, :create]
+
 end
