@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
       @user = User.new
       render 'new'
     end
+  end
 
   def create
     @user = User.find_by(username:login_params[:username])
@@ -15,6 +16,7 @@ class SessionsController < ApplicationController
       @error = "Invalid username or password"
       render 'new'
     end
+  end
 
   def destroy
     session.destroy
@@ -25,4 +27,7 @@ private
   def login_params
     params.require(:user).permit(:username, :password)
   end
+
 end
+
+
