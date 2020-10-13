@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   def new
     if !logged_in?
       @user = User.new
-      render :new
+      render 'new'
     end
 
   def create
@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       redirect_to root_path
     else
       @error = "Invalid username or password"
-      render = :new
+      render 'new'
     end
 
   def destroy
